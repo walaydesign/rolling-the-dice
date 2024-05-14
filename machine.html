@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>骰來骰去</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body>
+    <main>
+        <div class="header">
+            <img class="w-100" src="./public/img/Title-bar.png" alt="">
+            <div class="header_ham"></div>
+            <a href="./mail.html" class="header_mail"></a>
+            <nav class="header_menu">
+                <ul>
+                    <li>
+                        <a href="" class="active">
+                            <img src="./public/img/house.png" alt="">
+                            <span>返回大廳</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>返回當前房間</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>個人資料</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>遊玩紀錄</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./public/img/logout.png" alt="">
+                            <span>登出</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header_back btn-back"><img src="./public/img/back.png" alt=""></div>
+        </div>
+
+        <div class="notify">
+            <img src="./public/img/notify.png" alt="">
+            <marquee behavior="" direction="">超高中獎機率超高中獎機率超高中獎機率超高中</marquee>
+        </div>
+
+        <div class="machine">
+            <img class="machine_logo" src="./public/img/hero.png" alt="">
+            <div class="row">
+                <div class="col-4">
+                    <a href="" class="machine_item">
+                        <img src="./public/img/dice_1.png" alt="">
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="" class="machine_item">
+                        <img src="./public/img/dice_2.png" alt="">
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="" class="machine_item">
+                        <img src="./public/img/dice_3.png" alt="">
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="" class="machine_item">
+                        <img src="./public/img/dice_4.png" alt="">
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="" class="machine_item">
+                        <img src="./public/img/dice_5.png" alt="">
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="" class="machine_item">
+                        <img src="./public/img/dice_6.png" alt="">
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="" class="machine_item">
+                        <img src="./public/img/dice_7.png" alt="">
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="" class="machine_item">
+                        <img src="./public/img/dice_8.png" alt="">
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="" class="machine_item">
+                        <img src="./public/img/dice_9.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="machine_btn">
+                <div class="row m-0 align-items-center">
+                    <div class="col-5 p-0">
+                        <div class="machine_btn_fast btn-popup" data-link="#fast-select"><img class="w-100" src="./public/img/fast.png" alt=""></div>
+                    </div>
+                    <div class="col-2 p-0"></div>
+                    <div class="col-5 p-0">
+                        <a href="" class="machine_btn_play"><img class="w-100" src="./public/img/play.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="popup" id="fast-select">
+        <div class="popup_bg"></div>
+        <img class="popup_window" src="./public/img/window-5.png" alt="">
+        <div class="popup_content">
+            <h2 class="title">快速選台</h2>
+            <div class="d-flex align-items-center justify-content-center mb-4">
+                <button class="btn-dark py-1 mx-2">全部</button>
+                <button class="btn-dark py-1 mx-2">空台</button>
+            </div>
+            <div class="select-chennal">
+                <div class="select-chennal_item">
+                    <span>No.57轉數表</span>
+                    <img class="btn-popup" data-link="#chennal-info" src="./public/img/GO.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup chennal-info" id="chennal-info">
+        <div class="popup_bg"></div>
+        <img class="popup_window" src="./public/img/window-6.png" alt="">
+        <div class="popup_content">
+            <h3 class="subtitle">第27台資料</h3>
+            <h2 class="title">機台資訊</h2>
+            <table class="chennal-info_table">
+                <tr>
+                    <td>正頭連6顆+2星</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>正頭連6顆+1星</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>正頭連6顆</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>鬼頭</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>正二連5顆</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>鬼二</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>五不連</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>連3顆＋１</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>連3顆</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </div>
+        <img class="popup_partical" src="./public/img/partical.png" alt="">
+        <a href="" class="chennal-info_go"><img src="./public/img/GO!.png" alt=""></a>
+    </div>
+    
+    <script src="./public/js/jquery/jquery.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/common.js"></script>
+</body>
+</html>

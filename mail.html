@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>骰來骰去</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body>
+    <main>
+        <div class="header">
+            <img class="w-100" src="./public/img/Title-bar.png" alt="">
+            <div class="header_ham"></div>
+            <a href="./mail.html" class="header_mail"></a>
+            <nav class="header_menu">
+                <ul>
+                    <li>
+                        <a href="" class="active">
+                            <img src="./public/img/house.png" alt="">
+                            <span>返回大廳</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>返回當前房間</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>個人資料</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>遊玩紀錄</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./public/img/logout.png" alt="">
+                            <span>登出</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header_back btn-back"><img src="./public/img/back.png" alt=""></div>
+        </div>
+
+        <div class="mail page">
+            <h1 class="title">信箱</h1>
+            <div class="mail_filter">
+                <div class="mail_filter_date d-flex align-items-center">
+                    <img src="./public/img/Calender.png" alt="">
+                    <select name="" id="">
+                        <option value="">23年12月01日</option>
+                    </select>
+                    <span>~</span>
+                    <select name="" id="">
+                        <option value="">24年03月05日</option>
+                    </select>
+                </div>
+                <div class="mail_filter_type d-flex align-items-center">
+                    <label for="">種類</label>
+                    <select name="" id="">
+                        <option value="">寄件</option>
+                    </select>
+                    <button class="btn-dark">查詢</button>
+                </div>
+            </div>
+
+            <div class="mail_table">
+                <table>
+                    <tr>
+                        <th>時間</th>
+                        <th>已讀</th>
+                        <th>寄件人</th>
+                        <th>標題</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td class="mail_table_time">
+                            2023-12-21<br>
+                            04:34:01
+                        </td>
+                        <td>V</td>
+                        <td>官方</td>
+                        <td>公告維護通知</td>
+                        <td class="mail_table_detail"><a href="">詳細</a></td>
+                    </tr>
+                    <tr>
+                        <td class="mail_table_time">
+                            2023-12-21<br>
+                            04:34:01
+                        </td>
+                        <td>V</td>
+                        <td>官方</td>
+                        <td>公告</td>
+                        <td class="mail_table_detail"><a href="">詳細</a></td>
+                    </tr>
+                    <tr>
+                        <td class="mail_table_time">
+                            2023-12-21<br>
+                            04:34:01
+                        </td>
+                        <td>V</td>
+                        <td>官方</td>
+                        <td>公告維護通知</td>
+                        <td class="mail_table_detail"><a href="">詳細</a></td>
+                    </tr>
+                    <tr>
+                        <td class="mail_table_time">
+                            2023-12-21<br>
+                            04:34:01
+                        </td>
+                        <td>V</td>
+                        <td>官方</td>
+                        <td>公告維護通知</td>
+                        <td class="mail_table_detail"><a href="">詳細</a></td>
+                    </tr>
+                    <tr>
+                        <td class="mail_table_time">
+                            2023-12-21<br>
+                            04:34:01
+                        </td>
+                        <td>V</td>
+                        <td>官方</td>
+                        <td>公告維護通知</td>
+                        <td class="mail_table_detail"><a href="">詳細</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        
+    </main>
+    
+    <script src="./public/js/jquery/jquery.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/common.js"></script>
+</body>
+</html>
