@@ -135,10 +135,10 @@
                 <button class="game_btn_playone">
                     <img src="./public/img/playone.png" alt="">
                 </button>
-                <button class="game_btn_auto">
+                <button class="game_btn_auto btn-popup" data-link="#autoplay">
                     <img src="./public/img/auto.png" alt="">
                 </button>
-                <button class="game_btn_spin">
+                <button class="game_btn_spin btn-popup" data-link="#speed">
                     <img src="./public/img/spin.png" alt="">
                 </button>
             </div>
@@ -203,6 +203,90 @@
         </div>
         <img class="popup_close" src="./public/img/remove.png" alt="">
     </div>
+
+    <div class="popup autoplay" id="autoplay">
+        <div class="popup_inner">
+            <div class="popup_bg"></div>
+            <img class="popup_window" src="./public/img/window-9.png" alt="">
+            <div class="popup_content">
+                <div class="d-flex align-items-center">
+                    <button class="autoplay_btn btn-stop"><img src="./public/img/stop.png" alt=""></button>
+                    <div class="autoplay_number">
+                        <div class="mb-3">
+                            <label for="">局數</label>
+                            <div class="numberBox">
+                                <img class="numberBox_btn autoplay_number_minus" src="./public/img/-.png" alt="">
+                                <div class="numberBox_num color-pink">10</div>
+                                <img class="numberBox_btn autoplay_number_plus" src="./public/img/+.png" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="">中獎終止條件</label>
+                            <div class="numberBox">
+                                <img class="numberBox_btn autoplay_number_minus" src="./public/img/-.png" alt="">
+                                <div class="numberBox_num">1000</div>
+                                <img class="numberBox_btn autoplay_number_plus" src="./public/img/+.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="autoplay_btn btn-start"><img src="./public/img/start-2.png" alt=""></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="popup speed" id="speed">
+        <div class="popup_inner">
+            <div class="popup_bg"></div>
+            <img class="popup_window" src="./public/img/window-10.png" alt="">
+            <div class="popup_content">
+                <h1 class="title-yellow">轉速表</h1>
+                <table class="chennal-info_table">
+                    <tr>
+                        <td>九同</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>八同</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>七同</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>全大/全小</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>三配三配三</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>六同</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>全單</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>全雙</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>四配四配一</td>
+                        <td>1</td>
+                    </tr>
+                </table>
+                <img class="popup_close" src="./public/img/remove.png" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    
     
     <script src="./public/js/jquery/jquery.min.js"></script>
     <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
@@ -213,6 +297,20 @@
         var swiper = new Swiper(".game_coin_swiper", {
             slidesPerView: 4.4,
             spaceBetween: 10,
+        })
+
+        $(".numberBox_btn").click(function(){
+            let num = $(this).parents(".numberBox").find(".numberBox_num").text();
+            if($(this).hasClass("autoplay_number_minus")) {
+                if(num > 0) {
+                    num--;
+                }else {
+                    num = 0;
+                }
+            }else if($(this).hasClass("autoplay_number_plus")) {
+                num++;
+            }
+            $(this).parents(".numberBox").find(".numberBox_num").text(num);
         })
 
         
