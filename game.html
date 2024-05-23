@@ -19,12 +19,13 @@
     <main>
         <div class="header">
             <img class="w-100" src="./public/img/Title-bar.png" alt="">
+            <a href="./setting.html" class="header_user"></a>
             <div class="header_ham"></div>
             <a href="./mail.html" class="header_mail"></a>
             <nav class="header_menu">
                 <ul>
                     <li>
-                        <a href="" class="active">
+                        <a href="./menu.html" class="active">
                             <img src="./public/img/house.png" alt="">
                             <span>返回大廳</span>
                         </a>
@@ -35,12 +36,12 @@
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="./setting.html">
                             <span>個人資料</span>
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="./record.html">
                             <span>遊玩紀錄</span>
                         </a>
                     </li>
@@ -85,9 +86,9 @@
                         </div>
                     </div>
                     <div class="col-2">
-                        <div class="game_setting_link btn-popup">
+                        <a href="./history.html" class="game_setting_link btn-popup">
                             <img src="./public/img/record.png" alt="">
-                        </div>
+                        </a>
                     </div>
                     <div class="col-2">
                         <div class="game_setting_link btn-popup">
@@ -131,10 +132,11 @@
             <div class="game_btn d-flex justify-content-center">
                 <button class="game_btn_jump">
                     <img src="./public/img/jump.png" alt="">
-                    <div class="select">
-                        <span>短</span>
-                        <img src="./public/img/triangle-down.png" alt="">
-                    </div>
+                    <select name="" id="" class="select">
+                        <option value="">短</option>
+                        <option value="">中</option>
+                        <option value="">長</option>
+                    </select>
                 </button>
                 <button class="game_btn_playone">
                     <img src="./public/img/playone.png" alt="">
@@ -150,90 +152,96 @@
         
     </main>
 
-    <div class="popup" id="check-dice">
+    <div class="popup check-dice" id="check-dice">
         <div class="popup_bg"></div>
-        <img class="popup_window" src="./public/img/window-4.png" alt="">
-        <div class="popup_content">
-            <div class="hint">系統提示</div>
-            <p class="text-center mb-5 fs-5">
-                確認申請檢查骰子？<br>
-                （需要支付5000鑽）
-            </p>
-            <div class="d-flex align-items-center justify-content-end">
-                <button class="btn-bright me-3 px-3">確認</button>
-                <button class="btn-dark px-3">取消</button>
+        <div class="popup_window-wrap">
+            <img class="popup_window" src="./public/img/window-4.png" alt="">
+            <div class="popup_content">
+                <div class="hint">系統提示</div>
+                <p class="text-center mb-5 fs-5">
+                    確認申請檢查骰子？<br>
+                    （需要支付5000鑽）
+                </p>
+                <div class="d-flex align-items-center justify-content-end">
+                    <button class="btn-bright me-3 px-3">確認</button>
+                    <button class="btn-dark px-3 popup_close">取消</button>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="popup" id="game-intro">
         <div class="popup_bg"></div>
-        <img class="popup_window" src="./public/img/window.png" alt="">
-        <div class="popup_content">
-            <h2 class="title-yellow">遊戲說明</h2>
-            <div class="popup_content_inner">
-                <div class="inner">
-                    <h3>【鬼面骰】</h3>
-                    六顆單面骰加二顆單面黃色星星<br>
-                    沒小遊戲，規則與單面骰相同，這是以一注20獲得的獎，要換為倍率<br>
-                    <br>
-                    <h3>【術語解釋】</h3>
-                    骰中二顆星星變成任意數，來補缺達到獲獎最大化。<br>
-                    骰中二顆星星=鬼牌/鬼面<br>
-                    正=這種贏點的組合不含鬼牌<br>
-                    鬼=這種贏點的組合不含鬼牌，由鬼牌促成<br>
-                    <br>
-                    <h3>【舉例】</h3>
-                    原骰中124+雙黃星（鬼牌）<br>
-                    鬼牌等於任意數，可以是3或4或6但3的話促成1234獲利最大，則為三<br>
-                    <br>
-                    <br>
-                    正二：正二獎不含鬼牌12345或23456<br>
-                    正頭：正頭獎不含鬼牌123456<br>
-                    鬼二：有鬼牌組成的二獎鬼頭：有鬼牌組成的頭獎<br>
-                    <br>
-                    <br>
-                    <div class="font-big">
-                        一順25倍<br>
-                        一順+150倍（連四算1順+1）<br>
-                        5不連100倍<br>
-                        鬼二200倍<br>
-                        正二400倍<br>
-                        鬼頭750倍<br>
-                        正頭1500倍<br>
+        <div class="popup_window-wrap">
+            <img class="popup_window" src="./public/img/window.png" alt="">
+            <div class="popup_content">
+                <h2 class="title-yellow">遊戲說明</h2>
+                <div class="popup_content_inner">
+                    <div class="inner">
+                        <h3>【鬼面骰】</h3>
+                        六顆單面骰加二顆單面黃色星星<br>
+                        沒小遊戲，規則與單面骰相同，這是以一注20獲得的獎，要換為倍率<br>
+                        <br>
+                        <h3>【術語解釋】</h3>
+                        骰中二顆星星變成任意數，來補缺達到獲獎最大化。<br>
+                        骰中二顆星星=鬼牌/鬼面<br>
+                        正=這種贏點的組合不含鬼牌<br>
+                        鬼=這種贏點的組合不含鬼牌，由鬼牌促成<br>
+                        <br>
+                        <h3>【舉例】</h3>
+                        原骰中124+雙黃星（鬼牌）<br>
+                        鬼牌等於任意數，可以是3或4或6但3的話促成1234獲利最大，則為三<br>
+                        <br>
+                        <br>
+                        正二：正二獎不含鬼牌12345或23456<br>
+                        正頭：正頭獎不含鬼牌123456<br>
+                        鬼二：有鬼牌組成的二獎鬼頭：有鬼牌組成的頭獎<br>
+                        <br>
+                        <br>
+                        <div class="font-big">
+                            一順25倍<br>
+                            一順+150倍（連四算1順+1）<br>
+                            5不連100倍<br>
+                            鬼二200倍<br>
+                            正二400倍<br>
+                            鬼頭750倍<br>
+                            正頭1500倍<br>
+                        </div>
                     </div>
                 </div>
             </div>
+            <img class="popup_close" src="./public/img/remove.png" alt="">
         </div>
-        <img class="popup_close" src="./public/img/remove.png" alt="">
     </div>
 
     <div class="popup autoplay" id="autoplay">
         <div class="popup_inner">
             <div class="popup_bg"></div>
-            <img class="popup_window" src="./public/img/window-9.png" alt="">
-            <div class="popup_content">
-                <div class="d-flex align-items-center">
-                    <button class="autoplay_btn btn-stop"><img src="./public/img/stop.png" alt=""></button>
-                    <div class="autoplay_number">
-                        <div class="mb-3">
-                            <label for="">局數</label>
-                            <div class="numberBox">
-                                <img class="numberBox_btn autoplay_number_minus" src="./public/img/-.png" alt="">
-                                <div class="numberBox_num color-pink">10</div>
-                                <img class="numberBox_btn autoplay_number_plus" src="./public/img/+.png" alt="">
+            <div class="popup_window-wrap">
+                <img class="popup_window" src="./public/img/window-9.png" alt="">
+                <div class="popup_content">
+                    <div class="d-flex align-items-center">
+                        <button class="autoplay_btn btn-stop"><img src="./public/img/stop.png" alt=""></button>
+                        <div class="autoplay_number">
+                            <div class="mb-3">
+                                <label for="">局數</label>
+                                <div class="numberBox">
+                                    <img class="numberBox_btn autoplay_number_minus" src="./public/img/-.png" alt="">
+                                    <div class="numberBox_num color-pink">10</div>
+                                    <img class="numberBox_btn autoplay_number_plus" src="./public/img/+.png" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="">中獎終止條件</label>
+                                <div class="numberBox">
+                                    <img class="numberBox_btn autoplay_number_minus" src="./public/img/-.png" alt="">
+                                    <div class="numberBox_num">1000</div>
+                                    <img class="numberBox_btn autoplay_number_plus" src="./public/img/+.png" alt="">
+                                </div>
                             </div>
                         </div>
-                        <div>
-                            <label for="">中獎終止條件</label>
-                            <div class="numberBox">
-                                <img class="numberBox_btn autoplay_number_minus" src="./public/img/-.png" alt="">
-                                <div class="numberBox_num">1000</div>
-                                <img class="numberBox_btn autoplay_number_plus" src="./public/img/+.png" alt="">
-                            </div>
-                        </div>
+                        <button class="autoplay_btn btn-start"><img src="./public/img/start-2.png" alt=""></button>
                     </div>
-                    <button class="autoplay_btn btn-start"><img src="./public/img/start-2.png" alt=""></button>
                 </div>
             </div>
 
@@ -243,48 +251,51 @@
     <div class="popup speed" id="speed">
         <div class="popup_inner">
             <div class="popup_bg"></div>
-            <img class="popup_window" src="./public/img/window-10.png" alt="">
-            <div class="popup_content">
-                <h1 class="title-yellow">轉速表</h1>
-                <table class="chennal-info_table">
-                    <tr>
-                        <td>九同</td>
-                        <td>9</td>
-                    </tr>
-                    <tr>
-                        <td>八同</td>
-                        <td>8</td>
-                    </tr>
-                    <tr>
-                        <td>七同</td>
-                        <td>7</td>
-                    </tr>
-                    <tr>
-                        <td>全大/全小</td>
-                        <td>6</td>
-                    </tr>
-                    <tr>
-                        <td>三配三配三</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>六同</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>全單</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>全雙</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>四配四配一</td>
-                        <td>1</td>
-                    </tr>
-                </table>
-                <img class="popup_close" src="./public/img/remove.png" alt="">
+            <div class="popup_window-wrap">
+                <img class="popup_window" src="./public/img/window-10.png" alt="">
+                <div class="popup_content">
+                    <h1 class="title-yellow">轉速表</h1>
+                    <table class="chennal-info_table">
+                        <tr>
+                            <td>九同</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>八同</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>七同</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>全大/全小</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>三配三配三</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>六同</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>全單</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>全雙</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>四配四配一</td>
+                            <td>1</td>
+                        </tr>
+                    </table>
+                    <img class="popup_close" src="./public/img/remove.png" alt="">
+                </div>
+
             </div>
 
         </div>

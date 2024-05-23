@@ -18,12 +18,13 @@
     <main>
         <div class="header">
             <img class="w-100" src="./public/img/Title-bar.png" alt="">
+            <a href="./setting.html" class="header_user"></a>
             <div class="header_ham"></div>
             <a href="./mail.html" class="header_mail"></a>
             <nav class="header_menu">
                 <ul>
                     <li>
-                        <a href="" class="active">
+                        <a href="./menu.html" class="active">
                             <img src="./public/img/house.png" alt="">
                             <span>返回大廳</span>
                         </a>
@@ -34,12 +35,12 @@
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="./setting.html">
                             <span>個人資料</span>
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="./record.html">
                             <span>遊玩紀錄</span>
                         </a>
                     </li>
@@ -64,47 +65,71 @@
             <div class="row">
                 <div class="col-4">
                     <div class="machine_item btn-popup">
-                        <img src="./public/img/dice_1.png" alt="">
+                        <img class="machine_dice" src="./public/img/dice-1.png" alt="">
+                        <div class="machine_num"><span>25</span></div>
+                        <div class="machine_name">
+                            <img src="./public/img/name-bg.png" alt="">
+                            <span>骰神</span>
+                        </div>
+                        <img class="machine_user" src="./public/img/user.png" alt="">
                     </div>
                 </div>
                 <div class="col-4">
                     <div class="machine_item btn-popup" data-link="#hero">
-                        <img src="./public/img/dice_2.png" alt="">
+                        <img class="machine_dice" src="./public/img/dice-2.png" alt="">
+                        <div class="machine_num"><span>26</span></div>
                     </div>
                 </div>
                 <div class="col-4">
                     <div class="machine_item btn-popup" data-link="#replay">
-                        <img src="./public/img/dice_3.png" alt="">
+                        <img class="machine_dice" src="./public/img/dice-3.png" alt="">
+                        <div class="machine_num"><span>27</span></div>
                     </div>
                 </div>
                 <div class="col-4">
                     <div class="machine_item btn-popup">
-                        <img src="./public/img/dice_4.png" alt="">
+                        <img class="machine_dice" src="./public/img/dice-4.png" alt="">
+                        <div class="machine_num"><span>28</span></div>
                     </div>
                 </div>
                 <div class="col-4">
                     <div class="machine_item btn-popup">
-                        <img src="./public/img/dice_5.png" alt="">
+                        <img class="machine_dice" src="./public/img/dice-1.png" alt="">
+                        <div class="machine_num"><span>29</span></div>
+                        <div class="machine_name">
+                            <img src="./public/img/name-bg.png" alt="">
+                            <span>骰神</span>
+                        </div>
+                        <img class="machine_user" src="./public/img/user.png" alt="">
                     </div>
                 </div>
                 <div class="col-4">
                     <div class="machine_item btn-popup">
-                        <img src="./public/img/dice_6.png" alt="">
+                        <img class="machine_dice" src="./public/img/dice-1.png" alt="">
+                        <div class="machine_num"><span>30</span></div>
+                        <div class="machine_name">
+                            <img src="./public/img/name-bg.png" alt="">
+                            <span>骰神</span>
+                        </div>
+                        <img class="machine_user" src="./public/img/user.png" alt="">
                     </div>
                 </div>
                 <div class="col-4">
                     <div class="machine_item btn-popup">
-                        <img src="./public/img/dice_7.png" alt="">
+                        <img class="machine_dice" src="./public/img/dice-3.png" alt="">
+                        <div class="machine_num"><span>31</span></div>
                     </div>
                 </div>
                 <div class="col-4">
                     <div class="machine_item btn-popup">
-                        <img src="./public/img/dice_8.png" alt="">
+                        <img class="machine_dice" src="./public/img/dice-4.png" alt="">
+                        <div class="machine_num"><span>32</span></div>
                     </div>
                 </div>
                 <div class="col-4">
                     <div class="machine_item btn-popup">
-                        <img src="./public/img/dice_9.png" alt="">
+                        <img class="machine_dice" src="./public/img/dice-3.png" alt="">
+                        <div class="machine_num"><span>33</span></div>
                     </div>
                 </div>
             </div>
@@ -115,7 +140,7 @@
                     </div>
                     <div class="col-2 p-0"></div>
                     <div class="col-5 p-0">
-                        <a href="" class="machine_btn_play"><img class="w-100" src="./public/img/play.png" alt=""></a>
+                        <a href="./game.html" class="machine_btn_play"><img class="w-100" src="./public/img/play.png" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -124,131 +149,142 @@
 
     <div class="popup" id="fast-select">
         <div class="popup_bg"></div>
-        <img class="popup_window" src="./public/img/window-5.png" alt="">
-        <div class="popup_content">
-            <h2 class="title">快速選台</h2>
-            <div class="d-flex align-items-center justify-content-center mb-4">
-                <button class="btn-dark py-1 mx-2">全部</button>
-                <button class="btn-dark py-1 mx-2">空台</button>
-            </div>
-            <div class="select-chennal">
-                <div class="select-chennal_item">
-                    <span>No.57轉數表</span>
-                    <img class="btn-popup" data-link="#chennal-info" src="./public/img/GO.png" alt="">
+        <div class="popup_window-wrap">
+            <img class="popup_window" src="./public/img/window-5.png" alt="">
+            <div class="popup_content">
+                <h2 class="title">快速選台</h2>
+                <div class="d-flex align-items-center justify-content-center mb-4">
+                    <button class="btn-dark py-1 mx-2">全部</button>
+                    <button class="btn-dark py-1 mx-2">空台</button>
+                </div>
+                <div class="select-chennal">
+                    <div class="select-chennal_item">
+                        <span>No.57轉數表</span>
+                        <a href="./game.html"><img class="btn-popup" data-link="#chennal-info" src="./public/img/GO.png" alt=""></a>
+                        
+                    </div>
                 </div>
             </div>
+
         </div>
     </div>
 
     <div class="popup chennal-info" id="chennal-info">
         <div class="popup_bg"></div>
-        <img class="popup_window" src="./public/img/window-6.png" alt="">
-        <div class="popup_content">
-            <h3 class="subtitle">第27台資料</h3>
-            <h2 class="title">機台資訊</h2>
-            <table class="chennal-info_table">
-                <tr>
-                    <td>正頭連6顆+2星</td>
-                    <td>9</td>
-                </tr>
-                <tr>
-                    <td>正頭連6顆+1星</td>
-                    <td>8</td>
-                </tr>
-                <tr>
-                    <td>正頭連6顆</td>
-                    <td>7</td>
-                </tr>
-                <tr>
-                    <td>鬼頭</td>
-                    <td>6</td>
-                </tr>
-                <tr>
-                    <td>正二連5顆</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td>鬼二</td>
-                    <td>4</td>
-                </tr>
-                <tr>
-                    <td>五不連</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td>連3顆＋１</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>連3顆</td>
-                    <td>1</td>
-                </tr>
-            </table>
+        <div class="popup_window-wrap">
+            <img class="popup_window" src="./public/img/window-6.png" alt="">
+            <div class="popup_content">
+                <h3 class="subtitle">第27台資料</h3>
+                <h2 class="title">機台資訊</h2>
+                <table class="chennal-info_table">
+                    <tr>
+                        <td>正頭連6顆+2星</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>正頭連6顆+1星</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>正頭連6顆</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>鬼頭</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>正二連5顆</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>鬼二</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>五不連</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>連3顆＋１</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>連3顆</td>
+                        <td>1</td>
+                    </tr>
+                </table>
+                <a href="" class="chennal-info_go"><img src="./public/img/GO!.png" alt=""></a>
+            </div>
+            <img class="popup_partical" src="./public/img/partical.png" alt="">
         </div>
-        <img class="popup_partical" src="./public/img/partical.png" alt="">
-        <a href="" class="chennal-info_go"><img src="./public/img/GO!.png" alt=""></a>
     </div>
 
     <div class="popup popup-hero" id="#hero">
         <div class="popup_bg"></div>
-        <img class="popup_window" src="./public/img/window-5.png" alt="">
-        <div class="popup_content">
-            <img class="popup-hero_logo" src="./public/img/hero.png" alt="">
-            <img class="popup-hero_dice" src="./public/img/25.png" alt="">
-            <p>
-                恭喜jdyts1619368<br>
-                2024-03-29<br>
-                中3顆1+1星<br>
-                赢3,000鑽
-            </p>
+        <div class="popup_window-wrap">
+            <img class="popup_window" src="./public/img/window-5.png" alt="">
+            <div class="popup_content">
+                <img class="popup-hero_logo" src="./public/img/hero.png" alt="">
+                <img class="popup-hero_dice" src="./public/img/25.png" alt="">
+                <p>
+                    恭喜jdyts1619368<br>
+                    2024-03-29<br>
+                    中3顆1+1星<br>
+                    赢3,000鑽
+                </p>
+            </div>
+
         </div>
     </div>
 
     <div class="popup popup-replay chennal-info" id="replay">
         <div class="popup_bg"></div>
-        <img class="popup_window" src="./public/img/window-6.png" alt="">
-        <div class="popup_content">
-            <h3 class="subtitle">第27台資料</h3>
-            <h2 class="title">機台資訊</h2>
-            <table class="chennal-info_table">
-                <tr>
-                    <td>正頭連6顆+2星</td>
-                    <td>9</td>
-                </tr>
-                <tr>
-                    <td>正頭連6顆+1星</td>
-                    <td>8</td>
-                </tr>
-                <tr>
-                    <td>正頭連6顆</td>
-                    <td>7</td>
-                </tr>
-                <tr>
-                    <td>鬼頭</td>
-                    <td>6</td>
-                </tr>
-                <tr>
-                    <td>正二連5顆</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td>鬼二</td>
-                    <td>4</td>
-                </tr>
-                <tr>
-                    <td>五不連</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td>連3顆＋１</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>連3顆</td>
-                    <td>1</td>
-                </tr>
-            </table>
-            <button class="popup-replay_btn"><img src="./public/img/replay.png" alt=""></button>
+        <div class="popup_window-wrap">
+            <img class="popup_window" src="./public/img/window-6.png" alt="">
+            <div class="popup_content">
+                <h3 class="subtitle">第27台資料</h3>
+                <h2 class="title">機台資訊</h2>
+                <table class="chennal-info_table">
+                    <tr>
+                        <td>正頭連6顆+2星</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>正頭連6顆+1星</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>正頭連6顆</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>鬼頭</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>正二連5顆</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>鬼二</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>五不連</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>連3顆＋１</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>連3顆</td>
+                        <td>1</td>
+                    </tr>
+                </table>
+                <button class="popup-replay_btn"><img src="./public/img/replay.png" alt=""></button>
+            </div>
         </div>
     </div>
     

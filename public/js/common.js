@@ -16,5 +16,7 @@ $(".popup_bg, .popup_close").click(function() {
     $(".popup").fadeOut(300);
 })
 
-// var music = document.getElementById("bgMusic");
-// music.play();
+var music = document.getElementById("bgMusic");
+window.onload = function() {
+    music.play();
+}

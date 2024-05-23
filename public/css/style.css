@@ -2,6 +2,10 @@
 body {
   font-family: "noto sans TC";
   color: #fff;
+  background-image: url(https://images.unsplash.com/photo-1520589884715-55ac7417f2ee?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 a {
@@ -21,7 +25,7 @@ button {
 }
 
 main {
-  max-width: 768px;
+  max-width: 450px;
   width: 100%;
   margin: 0 auto;
   background-color: #000;
@@ -72,6 +76,7 @@ main {
   top: 100%;
   right: 4%;
   display: none;
+  z-index: 10;
 }
 
 .header_menu li:not(:last-child) {
@@ -134,6 +139,16 @@ main {
 
 .header_back > img {
   width: 100%;
+}
+
+.header_user {
+  position: absolute;
+  width: 12%;
+  padding-bottom: 12%;
+  top: 45%;
+  left: 5%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .notify {
@@ -571,6 +586,16 @@ main {
   padding: 20px;
 }
 
+.machine .row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.machine .row > div {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .machine_logo {
   display: block;
   width: 60%;
@@ -580,10 +605,70 @@ main {
 .machine_item {
   display: block;
   margin-bottom: 20px;
+  position: relative;
+  margin-bottom: 40px;
 }
 
 .machine_item > img {
   width: 100%;
+}
+
+.machine_dice {
+  width: 100%;
+}
+
+.machine_num {
+  position: absolute;
+  width: 33%;
+  padding-bottom: 33%;
+  background-image: url(../img/number-bg.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  left: -10%;
+  top: 10%;
+}
+
+.machine_num span {
+  display: block;
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -60%);
+          transform: translate(-50%, -60%);
+  line-height: 1;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.machine_name {
+  width: 75%;
+  position: absolute;
+  bottom: -20%;
+  left: 20%;
+}
+
+.machine_name > img {
+  width: 100%;
+}
+
+.machine_name span {
+  color: #ffed9a;
+  position: absolute;
+  white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.machine_user {
+  position: absolute;
+  width: 35% !important;
+  left: -5%;
+  bottom: -15%;
 }
 
 .game_screen {
@@ -703,11 +788,17 @@ main {
   padding: 1px 10px;
   -webkit-transform: translate(-50%, 50%);
           transform: translate(-50%, 50%);
-}
-
-.game_btn_jump .select span {
   color: #fff;
   font-size: 12px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url(../img/triangle-down.png);
+  background-size: 10px;
+  background-position: calc(100% - 5px) center;
+  background-repeat: no-repeat;
+  background-color: #4d3f72;
+  padding-right: 20px;
 }
 
 .game_btn_jump .select img {
@@ -738,6 +829,18 @@ main {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   top: 10%;
+}
+
+.popup_window-wrap {
+  width: 100%;
+  height: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .popup_content {
@@ -831,8 +934,13 @@ main {
   margin-bottom: 10px;
 }
 
-.select-chennal_item img {
+.select-chennal_item a {
   width: 30%;
+  display: block;
+}
+
+.select-chennal_item a > img {
+  width: 100%;
 }
 
 .select-chennal_item span {
@@ -871,11 +979,11 @@ main {
 }
 
 .chennal-info_go {
-  position: absolute;
   display: block;
-  width: 30%;
-  right: 9%;
-  top: 54%;
+  width: 45%;
+  margin-left: auto;
+  -webkit-transform: translateY(5%);
+          transform: translateY(5%);
 }
 
 .chennal-info_go > img {
@@ -1032,14 +1140,15 @@ main {
 }
 
 .autoplay .popup_window {
-  top: inherit;
-  bottom: 10%;
+  top: 60%;
 }
 
 .autoplay .popup_content {
   padding: 20px 5px;
-  top: inherit;
-  bottom: 11.5%;
+  top: 60%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .autoplay_btn {
@@ -1123,5 +1232,18 @@ main {
 
 .speed .popup_close > img {
   width: 100%;
+}
+
+.bg-music {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.check-dice .popup_close {
+  position: static;
+  width: auto;
 }
 /*# sourceMappingURL=style.css.map */
