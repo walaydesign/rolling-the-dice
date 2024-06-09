@@ -18,7 +18,7 @@
     <main>
         <div class="header">
             <img class="w-100" src="./public/img/Title-bar.png" alt="">
-            <a href="./setting.html" class="header_user"></a>
+            <a href="./detail.html" class="header_user"></a>
             <div class="header_ham"></div>
             <a href="./mail.html" class="header_mail"></a>
             <nav class="header_menu">
@@ -30,7 +30,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a class="btn-popup" data-link="#room-alert">
                             <span>返回當前房間</span>
                         </a>
                     </li>
@@ -142,6 +142,14 @@
 
         
     </main>
+
+    <div class="popup" id="room-alert">
+        <div class="popup_bg"></div>
+        <div class="popup-full">
+            <p>當前沒有進入房間</p>
+            <img class="popup-full_close" src="./public/img/close.svg" alt="">
+        </div>
+    </div>
     
     <script src="./public/js/jquery/jquery.min.js"></script>
     <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>

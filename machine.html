@@ -18,7 +18,7 @@
     <main>
         <div class="header">
             <img class="w-100" src="./public/img/Title-bar.png" alt="">
-            <a href="./setting.html" class="header_user"></a>
+            <a href="./detail.html" class="header_user"></a>
             <div class="header_ham"></div>
             <a href="./mail.html" class="header_mail"></a>
             <nav class="header_menu">
@@ -61,10 +61,10 @@
         </div>
 
         <div class="machine">
-            <img class="machine_logo" src="./public/img/hero.png" alt="">
+            <img class="machine_logo btn-popup" data-link="#hero" src="./public/img/hero.png" alt="">
             <div class="row">
                 <div class="col-4">
-                    <div class="machine_item btn-popup">
+                    <div class="machine_item btn-popup" data-link="#chennal-info">
                         <img class="machine_dice" src="./public/img/dice-1.png" alt="">
                         <div class="machine_num"><span>25</span></div>
                         <div class="machine_name">
@@ -75,25 +75,25 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="machine_item btn-popup" data-link="#hero">
+                    <div class="machine_item btn-popup" data-link="#replay">
                         <img class="machine_dice" src="./public/img/dice-2.png" alt="">
                         <div class="machine_num"><span>26</span></div>
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="machine_item btn-popup" data-link="#replay">
+                    <div class="machine_item ban">
                         <img class="machine_dice" src="./public/img/dice-3.png" alt="">
                         <div class="machine_num"><span>27</span></div>
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="machine_item btn-popup">
+                    <div class="machine_item btn-popup" data-link="#repair">
                         <img class="machine_dice" src="./public/img/dice-4.png" alt="">
                         <div class="machine_num"><span>28</span></div>
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="machine_item btn-popup">
+                    <div class="machine_item btn-popup" data-link="#full">
                         <img class="machine_dice" src="./public/img/dice-1.png" alt="">
                         <div class="machine_num"><span>29</span></div>
                         <div class="machine_name">
@@ -104,7 +104,7 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="machine_item btn-popup">
+                    <div class="machine_item btn-popup" data-link="#chennal-info">
                         <img class="machine_dice" src="./public/img/dice-1.png" alt="">
                         <div class="machine_num"><span>30</span></div>
                         <div class="machine_name">
@@ -115,19 +115,19 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="machine_item btn-popup">
+                    <div class="machine_item ban">
                         <img class="machine_dice" src="./public/img/dice-3.png" alt="">
                         <div class="machine_num"><span>31</span></div>
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="machine_item btn-popup">
+                    <div class="machine_item btn-popup" data-link="#repair">
                         <img class="machine_dice" src="./public/img/dice-4.png" alt="">
                         <div class="machine_num"><span>32</span></div>
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="machine_item btn-popup">
+                    <div class="machine_item ban">
                         <img class="machine_dice" src="./public/img/dice-3.png" alt="">
                         <div class="machine_num"><span>33</span></div>
                     </div>
@@ -147,7 +147,7 @@
         </div>
     </main>
 
-    <div class="popup" id="fast-select">
+    <div class="popup fast-select" id="fast-select">
         <div class="popup_bg"></div>
         <div class="popup_window-wrap">
             <img class="popup_window" src="./public/img/window-5.png" alt="">
@@ -164,6 +164,7 @@
                         
                     </div>
                 </div>
+                <img class="popup_close" src="./public/img/remove.png" alt="">
             </div>
 
         </div>
@@ -215,12 +216,65 @@
                     </tr>
                 </table>
                 <a href="" class="chennal-info_go"><img src="./public/img/GO!.png" alt=""></a>
+                <img class="popup_close" src="./public/img/remove.png" alt="">
             </div>
             <img class="popup_partical" src="./public/img/partical.png" alt="">
         </div>
     </div>
 
-    <div class="popup popup-hero" id="#hero">
+    <div class="popup chennal-info" id="repair">
+        <div class="popup_bg"></div>
+        <div class="popup_window-wrap">
+            <img class="popup_window" src="./public/img/window-6.png" alt="">
+            <div class="popup_content">
+                <h3 class="subtitle">第27台資料</h3>
+                <h2 class="title">機台資訊</h2>
+                <table class="chennal-info_table">
+                    <tr>
+                        <td>正頭連6顆+2星</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>正頭連6顆+1星</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>正頭連6顆</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>鬼頭</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>正二連5顆</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>鬼二</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>五不連</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>連3顆＋１</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>連3顆</td>
+                        <td>1</td>
+                    </tr>
+                </table>
+                <!-- <a href="" class="chennal-info_go"><img src="./public/img/GO!.png" alt=""></a> -->
+                <img class="popup_close" src="./public/img/remove.png" alt="">
+            </div>
+            <img class="popup_partical" src="./public/img/partical.png" alt="">
+        </div>
+    </div>
+
+    <div class="popup popup-hero" id="hero">
         <div class="popup_bg"></div>
         <div class="popup_window-wrap">
             <img class="popup_window" src="./public/img/window-5.png" alt="">
@@ -284,7 +338,16 @@
                     </tr>
                 </table>
                 <button class="popup-replay_btn"><img src="./public/img/replay.png" alt=""></button>
+                <img class="popup_close" src="./public/img/remove.png" alt="">
             </div>
+        </div>
+    </div>
+
+    <div class="popup" id="full">
+        <div class="popup_bg"></div>
+        <div class="popup-full">
+            <p>滿台中請稍候</p>
+            <img class="popup-full_close" src="./public/img/close.svg" alt="">
         </div>
     </div>
     
