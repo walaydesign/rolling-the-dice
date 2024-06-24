@@ -727,14 +727,34 @@ main {
   position: absolute;
   width: 90%;
   left: 50%;
-  bottom: 11%;
+  bottom: 12%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
 
 .game_screen_dice img {
-  width: 10%;
+  width: 9%;
   margin: 0 1%;
+}
+
+.game_screen_dice img.fall-1 {
+  -webkit-animation: fall-1 2s forwards;
+          animation: fall-1 2s forwards;
+}
+
+.game_screen_dice img.fall-2 {
+  -webkit-animation: fall-2 2s forwards;
+          animation: fall-2 2s forwards;
+}
+
+.game_screen_dice img.fall-3 {
+  -webkit-animation: fall-3 2s forwards;
+          animation: fall-3 2s forwards;
+}
+
+.game_screen_dice img.fall-4 {
+  -webkit-animation: fall-4 2s forwards;
+          animation: fall-4 2s forwards;
 }
 
 .game_screen_identify {
@@ -744,6 +764,9 @@ main {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  -webkit-animation: disapear 1.6s forwards;
+          animation: disapear 1.6s forwards;
+  opacity: 1;
 }
 
 .game_setting {
@@ -850,6 +873,174 @@ main {
 
 .game_btn_rotate .select {
   background-color: #a1009b;
+}
+
+@-webkit-keyframes disapear {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes disapear {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fall-1 {
+  0% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fall-1 {
+  0% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fall-2 {
+  0% {
+    -webkit-transform: translateY(-80%);
+            transform: translateY(-80%);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateY(-80%);
+            transform: translateY(-80%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fall-2 {
+  0% {
+    -webkit-transform: translateY(-80%);
+            transform: translateY(-80%);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateY(-80%);
+            transform: translateY(-80%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fall-3 {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fall-3 {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fall-4 {
+  0% {
+    -webkit-transform: translateY(-130%);
+            transform: translateY(-130%);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateY(-130%);
+            transform: translateY(-130%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fall-4 {
+  0% {
+    -webkit-transform: translateY(-130%);
+            transform: translateY(-130%);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateY(-130%);
+            transform: translateY(-130%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .popup {

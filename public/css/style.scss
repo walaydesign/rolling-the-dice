@@ -639,11 +639,25 @@ main {
             position: absolute;
             width: 90%;
             left: 50%;
-            bottom: 11%;
+            bottom: 12%;
             transform: translateX(-50%);
             img {
-                width: 10%;
+                width: 9%;
                 margin: 0 1%;
+                &.fall {
+                    &-1 {
+                        animation: fall-1 2s forwards;
+                    }
+                    &-2 {
+                        animation: fall-2 2s forwards;
+                    }
+                    &-3 {
+                        animation: fall-3 2s forwards;
+                    }
+                    &-4 {
+                        animation: fall-4 2s forwards;
+                    }
+                }
             }
         }
         &_identify {
@@ -652,6 +666,8 @@ main {
             bottom: 11%;
             left: 50%;
             transform: translateX(-50%);
+            animation: disapear 1.6s forwards;
+            opacity: 1;
         }
     }
     &_setting {
@@ -745,6 +761,78 @@ main {
                 background-color: #a1009b;
             }
         }
+    }
+}
+
+@keyframes disapear {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fall-1 {
+    0% {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fall-2 {
+    0% {
+        transform: translateY(-80%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(-80%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fall-3 {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fall-4 {
+    0% {
+        transform: translateY(-130%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(-130%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
 
