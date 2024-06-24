@@ -683,8 +683,32 @@ main {
   position: relative;
 }
 
+.game_screen.dice .game_screen_title {
+  -webkit-transform: translate(-50%, -60%);
+          transform: translate(-50%, -60%);
+}
+
+.game_screen.dice .game_screen_outline {
+  height: 76%;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.game_screen.normal .game_screen_title {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.game_screen.normal .game_screen_outline {
+  height: 90%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 .game_screen-wrap {
-  padding: 40px 10px 10px;
+  padding: 40px 0 0;
 }
 
 .game_screen_title {
@@ -692,17 +716,34 @@ main {
   width: 30%;
   top: 0;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 
 .game_screen_outline {
   position: absolute;
-  height: 90%;
-  top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+}
+
+.game_screen_dice {
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  bottom: 11%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.game_screen_dice img {
+  width: 10%;
+  margin: 0 1%;
+}
+
+.game_screen_identify {
+  position: absolute;
+  width: 40%;
+  bottom: 11%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .game_setting {

@@ -598,22 +598,60 @@ main {
 .game {
     &_screen {
         position: relative;
+        &.dice {
+            .game_screen {
+                &_title {
+                    transform: translate(-50%, -60%);
+                }
+                &_outline {
+                    height: 76%;
+                    top: 0;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+        &.normal {
+            .game_screen {
+                &_title {
+                    transform: translate(-50%, -50%);
+                }
+                &_outline {
+                    height: 90%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
         &-wrap {
-            padding: 40px 10px 10px;
+            padding: 40px 0 0;
         }
         &_title {
             position: absolute;
             width: 30%;
             top: 0;
             left: 50%;
-            transform: translate(-50%, -50%);
         }
         &_outline {
             position: absolute;
-            height: 90%;
-            top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
+        }
+        &_dice {
+            position: absolute;
+            width: 90%;
+            left: 50%;
+            bottom: 11%;
+            transform: translateX(-50%);
+            img {
+                width: 10%;
+                margin: 0 1%;
+            }
+        }
+        &_identify {
+            position: absolute;
+            width: 40%;
+            bottom: 11%;
+            left: 50%;
+            transform: translateX(-50%);
         }
     }
     &_setting {
