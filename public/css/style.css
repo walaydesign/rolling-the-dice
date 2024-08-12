@@ -37,6 +37,7 @@ main {
   position: relative;
   padding-bottom: 40px;
   z-index: 0;
+  overflow: hidden;
 }
 
 .start {
@@ -59,8 +60,7 @@ main {
 }
 
 .header_ham {
-  width: 6.4%;
-  padding-bottom: 6.4%;
+  width: 8%;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -120,8 +120,7 @@ main {
 
 .header_mail {
   position: absolute;
-  width: 6.4%;
-  padding-bottom: 6.4%;
+  width: 8%;
   position: absolute;
   top: 50%;
   right: 17%;
@@ -147,11 +146,35 @@ main {
 .header_user {
   position: absolute;
   width: 12%;
-  padding-bottom: 12%;
-  top: 45%;
+  top: 50%;
   left: 5%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.header_userDetail {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+}
+
+.header_userDetail img {
+  width: 6%;
+  margin-right: 10px;
+}
+
+.header_userDetail_dimondNum {
+  border-radius: 5px;
+  border: 1px solid #ceb691;
+  color: #ffe6c2;
+  text-align: right;
+  line-height: 1;
+  padding: 3px 10px 5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#45366a), color-stop(50%, #2b213b), to(#564577));
+  background: linear-gradient(to bottom, #45366a 0%, #2b213b 50%, #564577 100%);
 }
 
 .notify {
@@ -716,6 +739,12 @@ main {
   width: 30%;
   top: 0;
   left: 50%;
+}
+
+.game_screen_title.notframe {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -11%;
 }
 
 .game_screen_outline {
